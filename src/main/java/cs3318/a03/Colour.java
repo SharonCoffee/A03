@@ -84,4 +84,9 @@ public class Colour {
         return result;
     }
 
+    @Override
+    public String toString() {
+        return "Colour{" + "red = " + red + ", green = " + green + ", blue = " + blue + "}";
+    }
+
 }
