@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac32a8c1-7311-489a-ab66-d7fd02f66a8a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/cs3318/a03/ColourTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cs3318/a03/ColourTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +55,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ColourTest.testColourEqualThreeParameters">
     <configuration name="ColourTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="A03" />
       <extension name="coverage">
@@ -71,8 +71,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ColourTest.testColourEqualThreeParameters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="A03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cs3318.a03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cs3318.a03" />
+      <option name="MAIN_CLASS_NAME" value="cs3318.a03.ColourTest" />
+      <option name="METHOD_NAME" value="testColourEqualThreeParameters" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ColourTest.testColourEqualThreeParameters" />
         <item itemvalue="JUnit.ColourTest" />
       </list>
     </recent_temporary>
@@ -85,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669479321969</updated>
-      <workItem from="1669479323109" duration="1103000" />
+      <workItem from="1669479323109" duration="1905000" />
     </task>
     <task id="LOCAL-00001" summary="build:  create new maven build file">
       <created>1669479371760</created>
@@ -143,7 +160,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669480153679</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat: Test the colour object constructor takes one parameter which produces combined RGB value with red component bits 16-23, green component bits 8-15 and blue component bits 0-7 fails">
+      <created>1669480650712</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669480650712</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: changed the hex value from 0x01020304 to 0x010203.  Test passes successfully with new hex value.">
+      <created>1669480745003</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669480745003</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +187,9 @@
     <MESSAGE value="feat: create a test to test the direct inputs and outputs of a test colour object&#10;feat: added variables, constructor, getters and setters in Colour class" />
     <MESSAGE value="feat: @BeforeEach test requires an empty constructor, which is not present in the Colour class" />
     <MESSAGE value="feat: Test that the colour constructor contains three parameters with floating point values ranging from 0.0 to 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Test that the colour constructor contains three parameters with floating point values ranging from 0.0 to 1.0" />
+    <MESSAGE value="feat: Test the colour object constructor takes one parameter which produces combined RGB value with red component bits 16-23, green component bits 8-15 and blue component bits 0-7 fails" />
+    <MESSAGE value="feat: Test the colour object constructor takes one parameter which produces combined RGB value with red component bits 16-23, green component bits 8-15 and blue component bits 0-7 added successfully" />
+    <MESSAGE value="feat: changed the hex value from 0x01020304 to 0x010203.  Test passes successfully with new hex value." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: changed the hex value from 0x01020304 to 0x010203.  Test passes successfully with new hex value." />
   </component>
 </project>
