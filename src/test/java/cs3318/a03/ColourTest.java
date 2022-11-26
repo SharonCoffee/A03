@@ -55,6 +55,13 @@ class ColourTest {
         assertTrue(testColour1.equals(testColour2));
     }
 
+    @Test
+    @DisplayName("Test when colours are equal then they should have same red, green and blue values")
+    void whenColoursAreEqualThenTheyShouldHaveSameRedGreenAndBlueValues() {
+        Colour testColour1 = new Colour(0.6f, 0.5f, 0.4f);
+        Colour testColour2 = new Colour(0.6f, 0.5f, 0.4f);
+        assertEquals(testColour1, testColour2);
+    }
 
 
 
