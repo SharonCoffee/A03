@@ -8,6 +8,9 @@ public class Colour {
     int RGB;
 
     public Colour(float red, float green, float blue) {
+        if (red < 0 || red > 1 || green < 0 || green > 1 || blue < 0 || blue > 1) {
+            throw new IllegalArgumentException("Invalid colour component value");
+        }
         this.red = red;
         this.green = green;
         this.blue = blue;
