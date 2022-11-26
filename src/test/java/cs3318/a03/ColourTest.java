@@ -12,6 +12,7 @@ class ColourTest {
 
     @BeforeEach
     void createTestColour() {
+        // requires values and there is no empty constructor in the Colour class
         //testColour = new Colour();
     }
 
