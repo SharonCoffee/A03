@@ -95,6 +95,15 @@ class ColourTest {
         assertFalse(testColour1.equals(testColour2));
     }
 
+    @Test
+    @DisplayName("Test that two colours compared to one another containing similar values will be equal, while two colours compared to one another will not be equal if they do not contain similar values")
+    public void testColourEqualsObject() {
+        Colour testColour1 = new Colour(0.1f, 0.2f, 0.3f);
+        Colour testColour2 = new Colour(0.1f, 0.2f, 0.3f);
+        Colour testColour3 = new Colour(0.1f, 0.3f, 0.3f);
+        assertTrue(testColour1.equals(testColour2));
+        assertFalse(testColour1.equals(testColour3));
 
+    }
 
 }
