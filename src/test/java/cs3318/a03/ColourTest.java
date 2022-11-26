@@ -87,6 +87,14 @@ class ColourTest {
         assertNotEquals(testColour1, testColour2);
     }
 
+    @Test
+    @DisplayName("Test the colour comparison is not equal for colour object constructor with one parameter")
+    void testColourNotEqualOneParameter() {
+        Colour testColour1 = new Colour(0x010203);
+        Colour testColour2 = new Colour(0x010204);
+        assertFalse(testColour1.equals(testColour2));
+    }
+
 
 
 }
