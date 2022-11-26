@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac32a8c1-7311-489a-ab66-d7fd02f66a8a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cs3318/a03/ColourTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cs3318/a03/ColourTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669479321969</updated>
-      <workItem from="1669479323109" duration="3958000" />
+      <workItem from="1669479323109" duration="4374000" />
     </task>
     <task id="LOCAL-00001" summary="build:  create new maven build file">
       <created>1669479371760</created>
@@ -228,7 +227,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669482826770</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="feat: Add Test that two colours compared to one another containing similar values will be equal, while two colours compared to one another will not be equal if they do not contain similar values, which is successful.">
+      <created>1669483491999</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1669483491999</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat: Add Test that two colours compared to one another containing similar values will be equal, while two colours compared to one another will not be equal if they do not contain similar values, which is successful.&#10;feat: Split above test into two separate tests to compare colour1 to colour2 and colour3 and compare colour2 to colour3 in both tests.">
+      <created>1669483692353</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1669483692353</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +265,8 @@
     <MESSAGE value="feat: Add Test the colour comparison is not equal for colour object constructor with three parameters, which is successful." />
     <MESSAGE value="feat: Add Test when colours are not equal then they should have different red, green and blue values, which is successful." />
     <MESSAGE value="feat: Add Test the colour comparison is not equal for colour object constructor with one parameter, which is successful." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Add Test the colour comparison is not equal for colour object constructor with one parameter, which is successful." />
+    <MESSAGE value="feat: Add Test that two colours compared to one another containing similar values will be equal, while two colours compared to one another will not be equal if they do not contain similar values, which is successful." />
+    <MESSAGE value="feat: Add Test that two colours compared to one another containing similar values will be equal, while two colours compared to one another will not be equal if they do not contain similar values, which is successful.&#10;feat: Split above test into two separate tests to compare colour1 to colour2 and colour3 and compare colour2 to colour3 in both tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Add Test that two colours compared to one another containing similar values will be equal, while two colours compared to one another will not be equal if they do not contain similar values, which is successful.&#10;feat: Split above test into two separate tests to compare colour1 to colour2 and colour3 and compare colour2 to colour3 in both tests." />
   </component>
 </project>

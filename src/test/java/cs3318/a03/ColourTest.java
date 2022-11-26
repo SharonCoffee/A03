@@ -118,8 +118,18 @@ class ColourTest {
         assertFalse(testColour1.equals(testColour3));
         assertFalse(testColour2.equals(testColour3));
 
-
     }
 
+    @Test
+    @DisplayName("Test if colour object constructor taking three parameters is within floating point values from 0.0 to 1.0")
+    void testColourConstructorWithinRangeReturnsColour() {
+        float RED_VALUE = 0.5f;
+        float GREEN_VALUE = 0.7f;
+        float BLUE_VALUE = 0.9f;
+        testColour = new Colour(RED_VALUE, GREEN_VALUE, BLUE_VALUE);
+        assertEquals(RED_VALUE, testColour.getRed());
+        assertEquals(GREEN_VALUE, testColour.getGreen());
+        assertEquals(BLUE_VALUE, testColour.getBlue());
+    }
 
 }
