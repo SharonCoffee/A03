@@ -222,6 +222,19 @@ class ColourTest {
         assertFalse(result);
     }
 
+
+    @Test
+    @DisplayName("Test Equals given a null object should return false")
+    void testEqualsNullObjectShouldReturnFalse() {
+        float RED_VALUE = 0.1f;
+        float GREEN_VALUE = 0.1f;
+        float BLUE_VALUE = 0.2f;
+        testColour = new Colour(RED_VALUE, GREEN_VALUE, BLUE_VALUE);
+        boolean result = testColour.equals(null);
+        assertFalse(result);
+    }
+
+
     @Test
     @DisplayName("Test that hash code is working correctly with valid input values")
     void testHashCode() {
