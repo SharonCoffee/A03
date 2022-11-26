@@ -157,5 +157,13 @@ class ColourTest {
         assertEquals(1638400, testColour.getCombinedFloatRGB(0.1f, 0.0f, 0.0f));
     }
 
+    @Test
+    @DisplayName("Test when creating colour object with red, green and blue bit components returns a combined RGB value that is correct")
+    void testColourCombinedRGBValueIsCorrect() {
+        testColour = new Colour(0xFF, 0x00, 0x00);
+        assertEquals(0xFF0000, testColour.getCombinedHexRGB(0xFF, 0x00, 0x00));
+    }
+
+
 
 }

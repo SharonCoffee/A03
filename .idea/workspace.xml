@@ -107,7 +107,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669479321969</updated>
-      <workItem from="1669479323109" duration="4996000" />
+      <workItem from="1669479323109" duration="5329000" />
     </task>
     <task id="LOCAL-00001" summary="build:  create new maven build file">
       <created>1669479371760</created>
@@ -270,7 +270,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669484296460</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="feat:  Add Test when creating a colour object with red, green and blue float values returns a combined RGB value that is correct, which fails.&#10;feat:  Add public int getCombinedFloatRGB method in Colour class for the above test.">
+      <created>1669484471306</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1669484471306</updated>
+    </task>
+    <task id="LOCAL-00025" summary="feat: Change expected RGB value and test is now successful.">
+      <created>1669484558191</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1669484558191</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +314,8 @@
     <MESSAGE value="feat: Add Test if colour object constructor taking three parameters is exceeding the maximum floating point value of 1.0, which fails." />
     <MESSAGE value="refactor:  modified the colour constructor in the Colour class to throw an exception if red, green and blue values are less than 0 or greater than 1.&#10;feat:  Test if colour object constructor taking three parameters is exceeding the maximum floating point value of 1.0 is now successful." />
     <MESSAGE value="feat:  Add Test if colour object constructor taking three parameters is less than the minimum floating point value of 0.0, which is successful." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:  Add Test if colour object constructor taking three parameters is less than the minimum floating point value of 0.0, which is successful." />
+    <MESSAGE value="feat:  Add Test when creating a colour object with red, green and blue float values returns a combined RGB value that is correct, which fails.&#10;feat:  Add public int getCombinedFloatRGB method in Colour class for the above test." />
+    <MESSAGE value="feat: Change expected RGB value and test is now successful." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Change expected RGB value and test is now successful." />
   </component>
 </project>

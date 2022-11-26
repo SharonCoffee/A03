@@ -64,4 +64,7 @@ public class Colour {
         return ((int)(red * 255) << 16) | ((int)(green * 255) << 8) | (int)(blue * 255);
     }
 
+    public int getCombinedHexRGB(int red, int green, int blue) {
+        return (red << 16) | (green << 8) | blue;
+    }
 }
