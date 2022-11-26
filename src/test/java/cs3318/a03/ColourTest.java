@@ -210,6 +210,28 @@ class ColourTest {
         assertThrows(IllegalArgumentException.class, () -> new Colour(16, 8, 0));
     }
 
+    @Test
+    @DisplayName("Test that hash code is working correctly with valid input values")
+    void testHashCode() {
+        float RED_VALUE = 0.7f;
+        float GREEN_VALUE = 0.8f;
+        float BLUE_VALUE = 0.9f;
+        testColour = new Colour(RED_VALUE, GREEN_VALUE, BLUE_VALUE);
+        assertEquals(testColour.hashCode(), Float.floatToIntBits(RED_VALUE) + Float.floatToIntBits(BLUE_VALUE) + Float.floatToIntBits(GREEN_VALUE));
+    }
+
+    @Test
+    @DisplayName("Test that the string method returns a string of text")
+    void testStringMethod() {
+        float RED_VALUE = 0.7f;
+        float GREEN_VALUE = 0.8f;
+        float BLUE_VALUE = 0.9f;
+        testColour = new Colour(RED_VALUE, GREEN_VALUE, BLUE_VALUE);
+        String expected =  "Colour{red = 0.7, green = 0.8, blue = 0.9}";
+        String actual = testColour.toString();
+        assertEquals(expected, actual);
+    }
+
 
 
 }
