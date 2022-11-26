@@ -192,4 +192,16 @@ class ColourTest {
         testColour = new Colour(0x123456);
         assertEquals(0x56, testColour.getBlue());
     }
+
+    @Test
+    @DisplayName("Test it is not allowed to create a Colour object without specifying valid red, green and blue component values.")
+    void testInvalidFloatColourComponents() {
+        assertThrows(IllegalArgumentException.class, () -> new Colour(-0.1f, 0.2f, 0.3f));
+        assertThrows(IllegalArgumentException.class, () -> new Colour(0.1f, -0.2f, 0.3f));
+        assertThrows(IllegalArgumentException.class, () -> new Colour(0.1f, 0.2f, -0.3f));
+        assertThrows(IllegalArgumentException.class, () -> new Colour(1.1f, 0.2f, 0.3f));
+        assertThrows(IllegalArgumentException.class, () -> new Colour(0.1f, 2.2f, 0.3f));
+        assertThrows(IllegalArgumentException.class, () -> new Colour(0.1f, 0.2f, 3.3f));
+    }
+
 }
