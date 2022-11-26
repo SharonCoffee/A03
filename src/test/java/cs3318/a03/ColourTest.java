@@ -141,4 +141,14 @@ class ColourTest {
         assertThrows(IllegalArgumentException.class, () -> new Colour(RED_VALUE, GREEN_VALUE, BLUE_VALUE));
     }
 
+    @Test
+    @DisplayName("Test if colour object constructor taking three parameters is less than the minimum floating point value of 0.0")
+    void testColourConstructorOutOfMinimumRangeThrowsIllegalArgumentException() {
+        float RED_VALUE = -0.1f;
+        float GREEN_VALUE = -0.2f;
+        float BLUE_VALUE = -0.3f;
+        assertThrows(IllegalArgumentException.class, () -> new Colour(RED_VALUE, GREEN_VALUE, BLUE_VALUE));
+    }
+
+
 }
