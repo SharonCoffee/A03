@@ -150,5 +150,12 @@ class ColourTest {
         assertThrows(IllegalArgumentException.class, () -> new Colour(RED_VALUE, GREEN_VALUE, BLUE_VALUE));
     }
 
+    @Test
+    @DisplayName("Test when creating a colour object with red, green and blue float values returns a combined RGB value that is correct")
+    void testCombinedRGB() {
+        testColour = new Colour(0.1f, 0.0f, 0.0f);
+        assertEquals(11468216, testColour.getCombinedFloatRGB(0.1f, 0.0f, 0.0f));
+    }
+
 
 }

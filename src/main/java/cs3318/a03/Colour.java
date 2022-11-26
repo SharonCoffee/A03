@@ -59,4 +59,9 @@ public class Colour {
         Colour colour = (Colour) colourObject;
         return Float.compare(colour.red, red) == 0 && Float.compare(colour.green, green) == 0 && Float.compare(colour.blue, blue) == 0;
     }
+
+    public int getCombinedFloatRGB(float red, float green, float blue) {
+        return ((int)(red * 255) << 16) | ((int)(green * 255) << 8) | (int)(blue * 255);
+    }
+
 }
