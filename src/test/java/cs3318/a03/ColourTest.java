@@ -132,4 +132,13 @@ class ColourTest {
         assertEquals(BLUE_VALUE, testColour.getBlue());
     }
 
+    @Test
+    @DisplayName("Test if colour object constructor taking three parameters is exceeding the maximum floating point value of 1.0")
+    void testColourConstructorOutOfMaximumRangeThrowsIllegalArgumentException() {
+        float RED_VALUE = 1.5f;
+        float GREEN_VALUE = 1.1f;
+        float BLUE_VALUE = 1.2f;
+        assertThrows(IllegalArgumentException.class, () -> new Colour(RED_VALUE, GREEN_VALUE, BLUE_VALUE));
+    }
+
 }

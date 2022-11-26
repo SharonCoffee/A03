@@ -106,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669479321969</updated>
-      <workItem from="1669479323109" duration="4374000" />
+      <workItem from="1669479323109" duration="4678000" />
     </task>
     <task id="LOCAL-00001" summary="build:  create new maven build file">
       <created>1669479371760</created>
@@ -241,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669483692353</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="feat: Add Test if colour object constructor taking three parameters is within floating point values from 0.0 to 1.0, which is successful.">
+      <created>1669483962947</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1669483962947</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,6 +274,7 @@
     <MESSAGE value="feat: Add Test the colour comparison is not equal for colour object constructor with one parameter, which is successful." />
     <MESSAGE value="feat: Add Test that two colours compared to one another containing similar values will be equal, while two colours compared to one another will not be equal if they do not contain similar values, which is successful." />
     <MESSAGE value="feat: Add Test that two colours compared to one another containing similar values will be equal, while two colours compared to one another will not be equal if they do not contain similar values, which is successful.&#10;feat: Split above test into two separate tests to compare colour1 to colour2 and colour3 and compare colour2 to colour3 in both tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Add Test that two colours compared to one another containing similar values will be equal, while two colours compared to one another will not be equal if they do not contain similar values, which is successful.&#10;feat: Split above test into two separate tests to compare colour1 to colour2 and colour3 and compare colour2 to colour3 in both tests." />
+    <MESSAGE value="feat: Add Test if colour object constructor taking three parameters is within floating point values from 0.0 to 1.0, which is successful." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Add Test if colour object constructor taking three parameters is within floating point values from 0.0 to 1.0, which is successful." />
   </component>
 </project>
