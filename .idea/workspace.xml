@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac32a8c1-7311-489a-ab66-d7fd02f66a8a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cs3318/a03/Colour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs3318/a03/Colour.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669479321969</updated>
-      <workItem from="1669479323109" duration="1905000" />
+      <workItem from="1669479323109" duration="2208000" />
     </task>
     <task id="LOCAL-00001" summary="build:  create new maven build file">
       <created>1669479371760</created>
@@ -174,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669480745003</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat: Add test the colour comparison is equal for colour object constructor with three parameters, but test failed.">
+      <created>1669481447353</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669481447353</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +197,7 @@
     <MESSAGE value="feat: Test the colour object constructor takes one parameter which produces combined RGB value with red component bits 16-23, green component bits 8-15 and blue component bits 0-7 fails" />
     <MESSAGE value="feat: Test the colour object constructor takes one parameter which produces combined RGB value with red component bits 16-23, green component bits 8-15 and blue component bits 0-7 added successfully" />
     <MESSAGE value="feat: changed the hex value from 0x01020304 to 0x010203.  Test passes successfully with new hex value." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: changed the hex value from 0x01020304 to 0x010203.  Test passes successfully with new hex value." />
+    <MESSAGE value="feat: Add test the colour comparison is equal for colour object constructor with three parameters, but test failed." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Add test the colour comparison is equal for colour object constructor with three parameters, but test failed." />
   </component>
 </project>

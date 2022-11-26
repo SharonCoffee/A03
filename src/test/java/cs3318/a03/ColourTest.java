@@ -49,11 +49,12 @@ class ColourTest {
 
     @Test
     @DisplayName("Test the colour comparison is equal for colour object constructor with three parameters")
-    void testColourEqualThreeParameters() {;
+    void testColourEqualThreeParameters() {
         Colour testColour1 = new Colour(0.1f, 0.2f, 0.3f);
         Colour testColour2 = new Colour(0.1f, 0.2f, 0.3f);
         assertTrue(testColour1.equals(testColour2));
     }
+
 
 
 
