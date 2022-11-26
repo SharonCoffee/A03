@@ -78,9 +78,9 @@ public class Colour {
 
     @Override
     public int hashCode() {
-        int result = (red != +0.0f ? Float.floatToIntBits(red) : 0);
-        result = result + (green != +0.0f ? Float.floatToIntBits(green) : 0);
-        result = result + (blue != +0.0f ? Float.floatToIntBits(blue) : 0);
+        int result = (red != 0.0f ? Float.floatToIntBits(red) : 0);
+        result = result + (green != 0.0f ? Float.floatToIntBits(green) : 0);
+        result = result + (blue != 0.0f ? Float.floatToIntBits(blue) : 0);
         return result;
     }
 

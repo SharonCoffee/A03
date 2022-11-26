@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac32a8c1-7311-489a-ab66-d7fd02f66a8a" name="Changes" comment="" />
+    <list default="true" id="ac32a8c1-7311-489a-ab66-d7fd02f66a8a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cs3318/a03/Colour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs3318/a03/Colour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cs3318/a03/ColourTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cs3318/a03/ColourTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +108,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669479321969</updated>
-      <workItem from="1669479323109" duration="6573000" />
+      <workItem from="1669479323109" duration="7672000" />
     </task>
     <task id="LOCAL-00001" summary="build:  create new maven build file">
       <created>1669479371760</created>
@@ -351,17 +355,41 @@
       <option name="project" value="LOCAL" />
       <updated>1669485902644</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="feat: Add Test Equals given object with different class should return false, which is successful.">
+      <created>1669486018765</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1669486018765</updated>
+    </task>
+    <task id="LOCAL-00037" summary="feat: Add Test Equals given a null object should return false, which is successful.">
+      <created>1669486075778</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1669486075778</updated>
+    </task>
+    <task id="LOCAL-00038" summary="feat: Add Test Equals given object with same values should return true, which is successful.">
+      <created>1669486122032</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1669486122032</updated>
+    </task>
+    <task id="LOCAL-00039" summary="feat: Add Test Equals given object with different values should return false, which is successful.">
+      <created>1669486168514</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1669486168514</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="style: removed ; that caused the test to fail. Test now runs successfully." />
-    <MESSAGE value="feat: Add Test when colours are equal then they should have same red, green and blue values, but test is failing." />
-    <MESSAGE value="feat: change the boolean equals (Object colourObject) method so that the test to check if colours have same three parameter values they are equal is successful.&#10;feat: Add Test the colour comparison is equal for colour object constructor with one parameter, which is successful." />
-    <MESSAGE value="feat: Add Test the colour comparison is not equal for colour object constructor with three parameters, which is successful." />
     <MESSAGE value="feat: Add Test when colours are not equal then they should have different red, green and blue values, which is successful." />
     <MESSAGE value="feat: Add Test the colour comparison is not equal for colour object constructor with one parameter, which is successful." />
     <MESSAGE value="feat: Add Test that two colours compared to one another containing similar values will be equal, while two colours compared to one another will not be equal if they do not contain similar values, which is successful." />
@@ -383,6 +411,10 @@
     <MESSAGE value="feat: Add Test that hash code is working correctly with valid input values, which is successful." />
     <MESSAGE value="feat: Add Test that the string method returns a string of text&quot;, which is successful after adding String toString() method in Colour class." />
     <MESSAGE value="feat: Add Test that the string method returns a string of text, which is successful after adding String toString() method in Colour class." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Add Test that the string method returns a string of text, which is successful after adding String toString() method in Colour class." />
+    <MESSAGE value="feat: Add Test Equals given object with different class should return false, which is successful." />
+    <MESSAGE value="feat: Add Test Equals given a null object should return false, which is successful." />
+    <MESSAGE value="feat: Add Test Equals given object with same values should return true, which is successful." />
+    <MESSAGE value="feat: Add Test Equals given object with different values should return false, which is successful." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Add Test Equals given object with different values should return false, which is successful." />
   </component>
 </project>
