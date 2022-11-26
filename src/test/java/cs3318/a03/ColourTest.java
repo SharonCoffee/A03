@@ -211,6 +211,18 @@ class ColourTest {
     }
 
     @Test
+    @DisplayName("Test Equals given object with different class should return false")
+    void testEqualsDifferentClassShouldReturnFalse() {
+        float RED_VALUE = 0.1f;
+        float GREEN_VALUE = 0.1f;
+        float BLUE_VALUE = 0.2f;
+        testColour = new Colour(RED_VALUE, GREEN_VALUE, BLUE_VALUE);
+        Object colourObject = "not a colour";
+        boolean result = testColour.equals(colourObject);
+        assertFalse(result);
+    }
+
+    @Test
     @DisplayName("Test that hash code is working correctly with valid input values")
     void testHashCode() {
         float RED_VALUE = 0.7f;

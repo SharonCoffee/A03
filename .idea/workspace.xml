@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac32a8c1-7311-489a-ab66-d7fd02f66a8a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/cs3318/a03/ColourTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cs3318/a03/ColourTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="ac32a8c1-7311-489a-ab66-d7fd02f66a8a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +104,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669479321969</updated>
-      <workItem from="1669479323109" duration="6256000" />
+      <workItem from="1669479323109" duration="6573000" />
     </task>
     <task id="LOCAL-00001" summary="build:  create new maven build file">
       <created>1669479371760</created>
@@ -332,17 +330,34 @@
       <option name="project" value="LOCAL" />
       <updated>1669485559547</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="feat: Add Test that it is not allowed to create a Colour object without valid red bit component values from 16-23, green bit component values from 8-15 and blue bit component values from 0-7, which is successful.">
+      <created>1669485618796</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1669485618796</updated>
+    </task>
+    <task id="LOCAL-00034" summary="feat: Add Test that hash code is working correctly with valid input values, which is successful.">
+      <created>1669485790473</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1669485790473</updated>
+    </task>
+    <task id="LOCAL-00035" summary="feat: Add Test that the string method returns a string of text, which is successful after adding String toString() method in Colour class.">
+      <created>1669485902644</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1669485902644</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: Test the colour object constructor takes one parameter which produces combined RGB value with red component bits 16-23, green component bits 8-15 and blue component bits 0-7 added successfully" />
-    <MESSAGE value="feat: changed the hex value from 0x01020304 to 0x010203.  Test passes successfully with new hex value." />
-    <MESSAGE value="feat: Add test the colour comparison is equal for colour object constructor with three parameters, but test failed." />
-    <MESSAGE value="style: removed ; that caused the test to fail. Test now runs succesfully." />
     <MESSAGE value="style: removed ; that caused the test to fail. Test now runs successfully." />
     <MESSAGE value="feat: Add Test when colours are equal then they should have same red, green and blue values, but test is failing." />
     <MESSAGE value="feat: change the boolean equals (Object colourObject) method so that the test to check if colours have same three parameter values they are equal is successful.&#10;feat: Add Test the colour comparison is equal for colour object constructor with one parameter, which is successful." />
@@ -364,6 +379,10 @@
     <MESSAGE value="feat: Add Test green components are in bits 8-15, which is successful." />
     <MESSAGE value="feat: Add Test blue components are in bits 0-7, which is successful." />
     <MESSAGE value="feat: Add Test it is not allowed to create a Colour object without specifying valid red, green and blue component values, which is successful." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Add Test it is not allowed to create a Colour object without specifying valid red, green and blue component values, which is successful." />
+    <MESSAGE value="feat: Add Test that it is not allowed to create a Colour object without valid red bit component values from 16-23, green bit component values from 8-15 and blue bit component values from 0-7, which is successful." />
+    <MESSAGE value="feat: Add Test that hash code is working correctly with valid input values, which is successful." />
+    <MESSAGE value="feat: Add Test that the string method returns a string of text&quot;, which is successful after adding String toString() method in Colour class." />
+    <MESSAGE value="feat: Add Test that the string method returns a string of text, which is successful after adding String toString() method in Colour class." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Add Test that the string method returns a string of text, which is successful after adding String toString() method in Colour class." />
   </component>
 </project>
