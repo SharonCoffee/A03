@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac32a8c1-7311-489a-ab66-d7fd02f66a8a" name="Changes" comment="" />
+    <list default="true" id="ac32a8c1-7311-489a-ab66-d7fd02f66a8a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/cs3318/a03/ColourTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cs3318/a03/ColourTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +26,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2I5lS2LdRfAYOxQXFWdIBgq66j2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -41,6 +46,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "project.propGUI"
   }
 }]]></component>
@@ -100,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669479321969</updated>
-      <workItem from="1669479323109" duration="2937000" />
+      <workItem from="1669479323109" duration="3259000" />
     </task>
     <task id="LOCAL-00001" summary="build:  create new maven build file">
       <created>1669479371760</created>
@@ -200,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669482263586</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="feat: Add Test the colour comparison is not equal for colour object constructor with three parameters, which is successful.">
+      <created>1669482523974</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1669482523974</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +234,7 @@
     <MESSAGE value="style: removed ; that caused the test to fail. Test now runs successfully." />
     <MESSAGE value="feat: Add Test when colours are equal then they should have same red, green and blue values, but test is failing." />
     <MESSAGE value="feat: change the boolean equals (Object colourObject) method so that the test to check if colours have same three parameter values they are equal is successful.&#10;feat: Add Test the colour comparison is equal for colour object constructor with one parameter, which is successful." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: change the boolean equals (Object colourObject) method so that the test to check if colours have same three parameter values they are equal is successful.&#10;feat: Add Test the colour comparison is equal for colour object constructor with one parameter, which is successful." />
+    <MESSAGE value="feat: Add Test the colour comparison is not equal for colour object constructor with three parameters, which is successful." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Add Test the colour comparison is not equal for colour object constructor with three parameters, which is successful." />
   </component>
 </project>
