@@ -204,4 +204,12 @@ class ColourTest {
         assertThrows(IllegalArgumentException.class, () -> new Colour(0.1f, 0.2f, 3.3f));
     }
 
+    @Test
+    @DisplayName("Test that it is not allowed to create a Colour object without valid red bit component values from 16-23, green bit component values from 8-15 and blue bit component values from 0-7")
+    void testInvalidColourComponentBitValues() {
+        assertThrows(IllegalArgumentException.class, () -> new Colour(16, 8, 0));
+    }
+
+
+
 }

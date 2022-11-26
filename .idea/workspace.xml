@@ -106,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669479321969</updated>
-      <workItem from="1669479323109" duration="5946000" />
+      <workItem from="1669479323109" duration="6256000" />
     </task>
     <task id="LOCAL-00001" summary="build:  create new maven build file">
       <created>1669479371760</created>
@@ -304,17 +304,41 @@
       <option name="project" value="LOCAL" />
       <updated>1669485187746</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="feat: Add Test red components are in bits 16-23, which is successful.">
+      <created>1669485294912</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1669485294912</updated>
+    </task>
+    <task id="LOCAL-00030" summary="feat: Add Test green components are in bits 8-15, which is successful.">
+      <created>1669485365478</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1669485365478</updated>
+    </task>
+    <task id="LOCAL-00031" summary="feat: Add Test blue components are in bits 0-7, which is successful.">
+      <created>1669485452308</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1669485452308</updated>
+    </task>
+    <task id="LOCAL-00032" summary="feat: Add Test it is not allowed to create a Colour object without specifying valid red, green and blue component values, which is successful.">
+      <created>1669485559547</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1669485559547</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: create a test to test the direct inputs and outputs of a test colour object&#10;feat: added variables, constructor, getters and setters in Colour class" />
-    <MESSAGE value="feat: @BeforeEach test requires an empty constructor, which is not present in the Colour class" />
-    <MESSAGE value="feat: Test that the colour constructor contains three parameters with floating point values ranging from 0.0 to 1.0" />
-    <MESSAGE value="feat: Test the colour object constructor takes one parameter which produces combined RGB value with red component bits 16-23, green component bits 8-15 and blue component bits 0-7 fails" />
     <MESSAGE value="feat: Test the colour object constructor takes one parameter which produces combined RGB value with red component bits 16-23, green component bits 8-15 and blue component bits 0-7 added successfully" />
     <MESSAGE value="feat: changed the hex value from 0x01020304 to 0x010203.  Test passes successfully with new hex value." />
     <MESSAGE value="feat: Add test the colour comparison is equal for colour object constructor with three parameters, but test failed." />
@@ -336,6 +360,10 @@
     <MESSAGE value="feat: Add Test when creating colour object with red, green and blue bit components returns a combined RGB value that is correct, which fails." />
     <MESSAGE value="feat: Change RGB value from separate hex values to one RGB value, then Test when creating colour object with red, green and blue bit components returns a combined RGB value that is correct, is successful." />
     <MESSAGE value="feat: Add Test float components returns the expected values from the float array which is equal to the input, which is successful." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Add Test float components returns the expected values from the float array which is equal to the input, which is successful." />
+    <MESSAGE value="feat: Add Test red components are in bits 16-23, which is successful." />
+    <MESSAGE value="feat: Add Test green components are in bits 8-15, which is successful." />
+    <MESSAGE value="feat: Add Test blue components are in bits 0-7, which is successful." />
+    <MESSAGE value="feat: Add Test it is not allowed to create a Colour object without specifying valid red, green and blue component values, which is successful." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Add Test it is not allowed to create a Colour object without specifying valid red, green and blue component values, which is successful." />
   </component>
 </project>
