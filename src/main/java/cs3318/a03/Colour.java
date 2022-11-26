@@ -43,10 +43,16 @@ public class Colour {
         return blue;
     }
 
-    public boolean equals(Colour other) {
-        if (this.red == other.red && this.green == other.green && this.blue == other.blue) {
+
+    @Override
+    public boolean equals(Object colourObject) {
+        if (this == colourObject) {
             return true;
         }
-        return false;
+        if (colourObject == null || getClass() != colourObject.getClass()) {
+            return false;
+        }
+        Colour colour = (Colour) colourObject;
+        return Float.compare(colour.red, red) == 0 && Float.compare(colour.green, green) == 0 && Float.compare(colour.blue, blue) == 0;
     }
 }
