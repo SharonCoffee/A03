@@ -164,6 +164,12 @@ class ColourTest {
         assertEquals(0xFF0000, testColour.getCombinedHexRGB(0xFF, 0x00, 0x00));
     }
 
-
+    @Test
+    @DisplayName("Test float components returns the expected values from the float array which is equal to the input.")
+    void testGetComponents() {
+        testColour = new Colour(0.1f, 0.0f, 0.0f);
+        float[] expected = {0.1f, 0.0f, 0.0f};
+        assertArrayEquals(expected, testColour.getComponents());
+    }
 
 }

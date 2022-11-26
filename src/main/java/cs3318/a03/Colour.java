@@ -67,4 +67,12 @@ public class Colour {
     public int getCombinedHexRGB(int red, int green, int blue) {
         return (red << 16) | (green << 8) | blue;
     }
+
+    public float[] getComponents() {
+        float[] components = new float[3];
+        components[0] = this.red;
+        components[1] = this.green;
+        components[2] = this.blue;
+        return components;
+    }
 }

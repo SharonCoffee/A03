@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac32a8c1-7311-489a-ab66-d7fd02f66a8a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs3318/a03/Colour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs3318/a03/Colour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cs3318/a03/ColourTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cs3318/a03/ColourTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="ac32a8c1-7311-489a-ab66-d7fd02f66a8a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,7 +104,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669479321969</updated>
-      <workItem from="1669479323109" duration="5329000" />
+      <workItem from="1669479323109" duration="5643000" />
     </task>
     <task id="LOCAL-00001" summary="build:  create new maven build file">
       <created>1669479371760</created>
@@ -284,15 +281,27 @@
       <option name="project" value="LOCAL" />
       <updated>1669484558191</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="feat: Add Test when creating colour object with red, green and blue bit components returns a combined RGB value that is correct, which fails.">
+      <created>1669484787984</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1669484787984</updated>
+    </task>
+    <task id="LOCAL-00027" summary="feat: Change RGB value from separate hex values to one RGB value, then Test when creating colour object with red, green and blue bit components returns a combined RGB value that is correct, is successful.">
+      <created>1669484973166</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1669484973166</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="build:  create new maven build file" />
-    <MESSAGE value="build:  create new maven build file with Colour class" />
     <MESSAGE value="feat: create @BeforeEach test colour" />
     <MESSAGE value="feat: create a test to test the direct inputs and outputs of a test colour object&#10;feat: added variables, constructor, getters and setters in Colour class" />
     <MESSAGE value="feat: @BeforeEach test requires an empty constructor, which is not present in the Colour class" />
@@ -316,6 +325,8 @@
     <MESSAGE value="feat:  Add Test if colour object constructor taking three parameters is less than the minimum floating point value of 0.0, which is successful." />
     <MESSAGE value="feat:  Add Test when creating a colour object with red, green and blue float values returns a combined RGB value that is correct, which fails.&#10;feat:  Add public int getCombinedFloatRGB method in Colour class for the above test." />
     <MESSAGE value="feat: Change expected RGB value and test is now successful." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Change expected RGB value and test is now successful." />
+    <MESSAGE value="feat: Add Test when creating colour object with red, green and blue bit components returns a combined RGB value that is correct, which fails." />
+    <MESSAGE value="feat: Change RGB value from separate hex values to one RGB value, then Test when creating colour object with red, green and blue bit components returns a combined RGB value that is correct, is successful." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Change RGB value from separate hex values to one RGB value, then Test when creating colour object with red, green and blue bit components returns a combined RGB value that is correct, is successful." />
   </component>
 </project>
