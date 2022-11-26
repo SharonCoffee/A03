@@ -85,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669479321969</updated>
-      <workItem from="1669479323109" duration="690000" />
+      <workItem from="1669479323109" duration="1103000" />
     </task>
     <task id="LOCAL-00001" summary="build:  create new maven build file">
       <created>1669479371760</created>
@@ -129,7 +129,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669479967932</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: @BeforeEach test requires an empty constructor, which is not present in the Colour class">
+      <created>1669480043778</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669480043778</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: Test that the colour constructor contains three parameters with floating point values ranging from 0.0 to 1.0">
+      <created>1669480153679</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669480153679</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +154,8 @@
     <MESSAGE value="build:  create new maven build file with Colour class" />
     <MESSAGE value="feat: create @BeforeEach test colour" />
     <MESSAGE value="feat: create a test to test the direct inputs and outputs of a test colour object&#10;feat: added variables, constructor, getters and setters in Colour class" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: create a test to test the direct inputs and outputs of a test colour object&#10;feat: added variables, constructor, getters and setters in Colour class" />
+    <MESSAGE value="feat: @BeforeEach test requires an empty constructor, which is not present in the Colour class" />
+    <MESSAGE value="feat: Test that the colour constructor contains three parameters with floating point values ranging from 0.0 to 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Test that the colour constructor contains three parameters with floating point values ranging from 0.0 to 1.0" />
   </component>
 </project>

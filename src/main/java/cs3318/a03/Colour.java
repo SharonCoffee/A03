@@ -5,10 +5,18 @@ public class Colour {
     public float green;
     public float blue;
 
+    int RGB;
+
     public Colour(float red, float green, float blue) {
         this.red = red;
         this.green = green;
         this.blue = blue;
+    }
+
+    public Colour(int RGB) {
+        this.red = (RGB >> 16) & 0xff;
+        this.green = (RGB >> 8) & 0xff;
+        this.blue = RGB & 0xff;
     }
 
     public void setRed(int red) {
