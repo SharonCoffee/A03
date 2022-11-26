@@ -124,7 +124,6 @@ class ColourTest {
         assertFalse(testColour1.equals(testColour2));
     }
 
-
     @Test
     @DisplayName("Test that two colours compared to one another containing similar values will be equal")
     public void testColourEqualsObject() {
@@ -320,7 +319,6 @@ class ColourTest {
         assertFalse(result);
     }
 
-
     @Test
     @DisplayName("Test Equals given a null object should return false")
     void testEqualsNullObjectShouldReturnFalse() {
@@ -361,7 +359,6 @@ class ColourTest {
         boolean result = testColour1.equals(testColour2);
         assertFalse(result);
     }
-
 
     @Test
     @DisplayName("Test that hash code is working correctly with valid input values")

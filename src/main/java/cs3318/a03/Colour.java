@@ -47,7 +47,6 @@ public class Colour {
         return blue;
     }
 
-
     @Override
     public boolean equals(Object colourObject) {
         if (this == colourObject) {

@@ -108,7 +108,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669479321969</updated>
-      <workItem from="1669479323109" duration="7672000" />
+      <workItem from="1669479323109" duration="10016000" />
     </task>
     <task id="LOCAL-00001" summary="build:  create new maven build file">
       <created>1669479371760</created>
@@ -383,14 +383,20 @@
       <option name="project" value="LOCAL" />
       <updated>1669486168514</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="feat: Add Test set red values of the colour, which is successful.&#10;feat: Add Test set green values of the colour, which is successful.&#10;feat: Add Test set blue values of the colour, which is successful.">
+      <created>1669487128654</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1669487128654</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: Add Test when colours are not equal then they should have different red, green and blue values, which is successful." />
     <MESSAGE value="feat: Add Test the colour comparison is not equal for colour object constructor with one parameter, which is successful." />
     <MESSAGE value="feat: Add Test that two colours compared to one another containing similar values will be equal, while two colours compared to one another will not be equal if they do not contain similar values, which is successful." />
     <MESSAGE value="feat: Add Test that two colours compared to one another containing similar values will be equal, while two colours compared to one another will not be equal if they do not contain similar values, which is successful.&#10;feat: Split above test into two separate tests to compare colour1 to colour2 and colour3 and compare colour2 to colour3 in both tests." />
@@ -415,6 +421,7 @@
     <MESSAGE value="feat: Add Test Equals given a null object should return false, which is successful." />
     <MESSAGE value="feat: Add Test Equals given object with same values should return true, which is successful." />
     <MESSAGE value="feat: Add Test Equals given object with different values should return false, which is successful." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Add Test Equals given object with different values should return false, which is successful." />
+    <MESSAGE value="feat: Add Test set red values of the colour, which is successful.&#10;feat: Add Test set green values of the colour, which is successful.&#10;feat: Add Test set blue values of the colour, which is successful." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Add Test set red values of the colour, which is successful.&#10;feat: Add Test set green values of the colour, which is successful.&#10;feat: Add Test set blue values of the colour, which is successful." />
   </component>
 </project>
