@@ -234,6 +234,20 @@ class ColourTest {
         assertFalse(result);
     }
 
+    @Test
+    @DisplayName("Test Equals given object with same values should return true")
+    void testEqualsObjectWithSameValuesShouldReturnTrue() {
+        float RED_VALUE1 = 0.1f;
+        float GREEN_VALUE1 = 0.2f;
+        float BLUE_VALUE1 = 0.3f;
+        float RED_VALUE2 = 0.1f;
+        float GREEN_VALUE2 = 0.2f;
+        float BLUE_VALUE2 = 0.3f;
+        Colour testColour1 = new Colour(RED_VALUE1, GREEN_VALUE1, BLUE_VALUE1);
+        Colour testColour2 = new Colour(RED_VALUE2, GREEN_VALUE2, BLUE_VALUE2);
+        boolean result = testColour1.equals(testColour2);
+        assertTrue(result);
+    }
 
     @Test
     @DisplayName("Test that hash code is working correctly with valid input values")
