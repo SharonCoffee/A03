@@ -41,7 +41,7 @@ class ColourTest {
     @Test
     @DisplayName("Test the colour object constructor takes one parameter which produces combined RGB value with red component bits 16-23, green component bits 8-15 and blue component bits 0-7")
     void testColourObjectConstructorOneParameter() {
-        testColour = new Colour(0x01020304);
+        testColour = new Colour(0x010203);
         assertEquals(0x01, testColour.red, 0.00001f);
         assertEquals(0x02, testColour.green, 0.00001f);
         assertEquals(0x03, testColour.blue, 0.00001f);
