@@ -71,6 +71,14 @@ class ColourTest {
         assertTrue(testColour1.equals(testColour2));
     }
 
+    @Test
+    @DisplayName("Test the colour comparison is not equal for colour object constructor with three parameters")
+    void testColourNotEqualThreeParameters() {
+        Colour testColour1 = new Colour(0.1f, 0.2f, 0.3f);
+        Colour testColour2 = new Colour(0.1f, 0.2f, 0.4f);
+        assertFalse(testColour1.equals(testColour2));
+    }
+
 
 
 

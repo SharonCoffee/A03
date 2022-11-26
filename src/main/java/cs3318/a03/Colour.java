@@ -17,17 +17,18 @@ public class Colour {
         this.red = (RGB >> 16) & 0xff;
         this.green = (RGB >> 8) & 0xff;
         this.blue = RGB & 0xff;
+        this.RGB = RGB;
     }
 
-    public void setRed(int red) {
+    public void setRed(float red) {
         this.red = red;
     }
 
-    public void setGreen(int green) {
+    public void setGreen(float green) {
         this.green = green;
     }
 
-    public void setBlue(int blue) {
+    public void setBlue(float blue) {
         this.blue = blue;
     }
 
