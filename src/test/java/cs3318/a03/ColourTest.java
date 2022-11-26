@@ -179,4 +179,11 @@ class ColourTest {
         assertEquals(0x12, testColour.getRed());
     }
 
+    @Test
+    @DisplayName("Test green components are in bits 8-15")
+    void testGreenComponents() {
+        testColour = new Colour(0x123456);
+        assertEquals(0x34, testColour.getGreen());
+    }
+
 }
