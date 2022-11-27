@@ -8,7 +8,17 @@ import java.util.Objects;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
+ * The ColourTest class contains methods for testing:
+ * if the colour object takes three parameters specifying colour components, in
+ * the order red, green and blue, using a floating point values in the range 0.0 to 1.0;
+ * if the colour object takes one parameter which is a combined RGB value
+ * consisting of the red component in bits 16-23, the green component in bits 8-15, and the blue
+ * component in bits 0-7;
+ * if it is not allowed to create a Colour object without specifying valid component values; and
+ * if colours can be compared and if considered to be equal they must have the same component values
  *
+ * @author  Sharon Coffee
+ * @version 1.0
  */
 
 
@@ -31,7 +41,7 @@ class ColourTest {
 
     @Test
     @DisplayName("Test that the colour constructor contains three parameters with floating point values ranging from 0.0 to 1.0")
-    void testColourObjectConstructorThreeParameters() {
+    void testColourObjectConstructorTakesThreeParameters() {
         float RED_VALUE = 0.1f;
         float GREEN_VALUE = 0.2f;
         float BLUE_VALUE = 0.3f;
@@ -44,7 +54,7 @@ class ColourTest {
 
     @Test
     @DisplayName("Test the colour object constructor takes one parameter which produces combined RGB value with red component bits 16-23, green component bits 8-15 and blue component bits 0-7")
-    void testColourObjectConstructorOneParameter() {
+    void testColourObjectConstructorTakesOneParameter() {
         int RGB = 0x010203;
         int EXPECTED_RED = 0x01;
         int EXPECTED_GREEN = 0x02;
@@ -58,7 +68,7 @@ class ColourTest {
 
     @Test
     @DisplayName("Test the colour comparison is equal for colour object constructor with three parameters")
-    void testColourEqualThreeParameters() {
+    void testColourComparisonIsEqualWithThreeParameters() {
         float RED_VALUE = 0.1f;
         float GREEN_VALUE = 0.2f;
         float BLUE_VALUE = 0.3f;
@@ -83,8 +93,7 @@ class ColourTest {
 
     @Test
     @DisplayName("Test the colour comparison is equal for colour object constructor with one parameter")
-    void testColourEqualOneParameter() {
-        // initially used 0x01020304, but removed 04 for previous test and passed.
+    void testColourComparisonIsEqualWithOneParameter() {
         int RGB = 0x010203;
         Colour testColour1 = new Colour(RGB);
         Colour testColour2 = new Colour(RGB);
@@ -93,7 +102,7 @@ class ColourTest {
 
     @Test
     @DisplayName("Test the colour comparison is not equal for colour object constructor with three parameters")
-    void testColourNotEqualThreeParameters() {
+    void testColourComparisonIsNotEqualWithThreeParameters() {
         float RED_VALUE1 = 0.1f;
         float GREEN_VALUE1 = 0.2f;
         float BLUE_VALUE1 = 0.3f;
@@ -121,7 +130,7 @@ class ColourTest {
 
     @Test
     @DisplayName("Test the colour comparison is not equal for colour object constructor with one parameter")
-    void testColourNotEqualOneParameter() {
+    void testColourComparisonIsNotEqualWithOneParameter() {
         int RGB1 = 0x010203;
         int RGB2 = 0x010204;
         Colour testColour1 = new Colour(RGB1);
@@ -130,8 +139,8 @@ class ColourTest {
     }
 
     @Test
-    @DisplayName("Test that two colours compared to one another containing similar values will be equal")
-    public void testColourEqualsObject() {
+    @DisplayName("Test that colours compared to one another containing similar values will be equal")
+    public void testColoursComparedContainSimilarValuesAreEqual() {
         float RED_VALUE1 = 0.1f;
         float GREEN_VALUE1 = 0.2f;
         float BLUE_VALUE1 = 0.3f;
@@ -151,7 +160,7 @@ class ColourTest {
 
     @Test
     @DisplayName("Test that two colours compared to one another containing different values will not be equal")
-    public void testColourNotEqualsObject() {
+    public void testColoursComparedContainDifferentValuesAreNotEqual() {
         float RED_VALUE1 = 0.1f;
         float GREEN_VALUE1 = 0.4f;
         float BLUE_VALUE1 = 0.3f;
@@ -193,6 +202,25 @@ class ColourTest {
     }
 
     @Test
+    @DisplayName("Test if colour object constructor taking three parameters is exceeding the maximum floating point value of 1.0")
+    void testColourConstructorOutOfMaximumRangeThrowsIllegalArgumentException() {
+        float RED_VALUE = 1.5f;
+        float GREEN_VALUE = 1.1f;
+        float BLUE_VALUE = 1.2f;
+        assertThrows(IllegalArgumentException.class, () -> new Colour(RED_VALUE, GREEN_VALUE, BLUE_VALUE));
+    }
+
+    @Test
+    @DisplayName("Test if colour object constructor taking three parameters is less than the minimum floating point value of 0.0")
+    void testColourConstructorOutOfMinimumRangeThrowsIllegalArgumentException() {
+        float RED_VALUE = -0.1f;
+        float GREEN_VALUE = -0.2f;
+        float BLUE_VALUE = -0.3f;
+        assertThrows(IllegalArgumentException.class, () -> new Colour(RED_VALUE, GREEN_VALUE, BLUE_VALUE));
+    }
+
+
+    @Test
     @DisplayName("Test set green values of the colour")
     void setGreen() {
         float RED_VALUE = 1.0f;
@@ -215,26 +243,8 @@ class ColourTest {
     }
 
     @Test
-    @DisplayName("Test if colour object constructor taking three parameters is exceeding the maximum floating point value of 1.0")
-    void testColourConstructorOutOfMaximumRangeThrowsIllegalArgumentException() {
-        float RED_VALUE = 1.5f;
-        float GREEN_VALUE = 1.1f;
-        float BLUE_VALUE = 1.2f;
-        assertThrows(IllegalArgumentException.class, () -> new Colour(RED_VALUE, GREEN_VALUE, BLUE_VALUE));
-    }
-
-    @Test
-    @DisplayName("Test if colour object constructor taking three parameters is less than the minimum floating point value of 0.0")
-    void testColourConstructorOutOfMinimumRangeThrowsIllegalArgumentException() {
-        float RED_VALUE = -0.1f;
-        float GREEN_VALUE = -0.2f;
-        float BLUE_VALUE = -0.3f;
-        assertThrows(IllegalArgumentException.class, () -> new Colour(RED_VALUE, GREEN_VALUE, BLUE_VALUE));
-    }
-
-    @Test
     @DisplayName("Test when creating a colour object with red, green and blue float values returns a combined RGB value that is correct")
-    void testCombinedRGB() {
+    void testFloatValuesReturnsCombinedRGB() {
         float RED_VALUE = 0.1f;
         float GREEN_VALUE = 0.0f;
         float BLUE_VALUE = 0.0f;
@@ -245,7 +255,7 @@ class ColourTest {
 
     @Test
     @DisplayName("Test when creating colour object with red, green and blue bit components returns a combined RGB value that is correct")
-    void testColourCombinedRGBValueIsCorrect() {
+    void testColourBitValuesReturnsCombinedRGBValueIsCorrect() {
         int RED_VALUE = 0xFF;
         int GREEN_VALUE = 0x00;
         int BLUE_VALUE = 0x00;
@@ -256,7 +266,7 @@ class ColourTest {
 
     @Test
     @DisplayName("Test float components returns the expected values from the float array which is equal to the input.")
-    void testGetComponents() {
+    void testFloatComponentsReturnsExpectedFloatValuesFromArray() {
         float RED_VALUE = 0.1f;
         float GREEN_VALUE = 0.0f;
         float BLUE_VALUE = 0.0f;
@@ -267,7 +277,7 @@ class ColourTest {
 
     @Test
     @DisplayName("Test red components are in bits 16-23")
-    void testRedComponents() {
+    void testRedComponentsInBits() {
         int RGB = 0x123456;
         int RED_BITS = 0x12;
         testColour = new Colour(RGB);
@@ -276,7 +286,7 @@ class ColourTest {
 
     @Test
     @DisplayName("Test green components are in bits 8-15")
-    void testGreenComponents() {
+    void testGreenComponentsInBits() {
         int RGB = 0x123456;
         int GREEN_BITS = 0x34;
         testColour = new Colour(RGB);
@@ -285,7 +295,7 @@ class ColourTest {
 
     @Test
     @DisplayName("Test blue components are in bits 0-7")
-    void testBlueComponents() {
+    void testBlueComponentsInBits() {
         int RGB = 0x123456;
         int BLUE_BITS = 0x56;
         testColour = new Colour(RGB);
@@ -294,7 +304,7 @@ class ColourTest {
 
     @Test
     @DisplayName("Test it is not allowed to create a Colour object without specifying valid red, green and blue component values.")
-    void testInvalidFloatColourComponents() {
+    void testNotAllowedToCreateColourObjectWithoutSpecifyingFloatColourComponents() {
         assertThrows(IllegalArgumentException.class, () -> new Colour(-0.1f, 0.2f, 0.3f));
         assertThrows(IllegalArgumentException.class, () -> new Colour(0.1f, -0.2f, 0.3f));
         assertThrows(IllegalArgumentException.class, () -> new Colour(0.1f, 0.2f, -0.3f));
@@ -305,7 +315,7 @@ class ColourTest {
 
     @Test
     @DisplayName("Test that it is not allowed to create a Colour object without valid red bit component values from 16-23, green bit component values from 8-15 and blue bit component values from 0-7")
-    void testInvalidColourComponentBitValues() {
+    void testNotAllowedToCreateColourObjectWithoutSpecifyingComponentBitValues() {
         int RED_BITS = 16;
         int GREEN_BITS = 8;
         int BLUE_BITS = 0;
@@ -313,7 +323,7 @@ class ColourTest {
     }
 
     @Test
-    @DisplayName("Test Equals given object with different class should return false")
+    @DisplayName("Test objects from different class are not equal and should return false")
     void testEqualsDifferentClassShouldReturnFalse() {
         float RED_VALUE = 0.1f;
         float GREEN_VALUE = 0.1f;
@@ -325,7 +335,7 @@ class ColourTest {
     }
 
     @Test
-    @DisplayName("Test Equals given a null object should return false")
+    @DisplayName("Test a null colour object should return false")
     void testEqualsNullObjectShouldReturnFalse() {
         float RED_VALUE = 0.1f;
         float GREEN_VALUE = 0.1f;
@@ -336,7 +346,7 @@ class ColourTest {
     }
 
     @Test
-    @DisplayName("Test Equals given object with same values should return true")
+    @DisplayName("Test colour object with same values are equal and should return true")
     void testEqualsObjectWithSameValuesShouldReturnTrue() {
         float RED_VALUE1 = 0.1f;
         float GREEN_VALUE1 = 0.2f;
@@ -351,7 +361,7 @@ class ColourTest {
     }
 
     @Test
-    @DisplayName("Test Equals given object with different values should return false")
+    @DisplayName("Test colour objects with different values are not equal and should return false")
     void testEqualsObjectWithDifferentValuesShouldReturnFalse() {
         float RED_VALUE1 = 0.1f;
         float GREEN_VALUE1 = 0.2f;
