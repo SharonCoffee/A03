@@ -1,5 +1,21 @@
 package cs3318.a03;
 
+
+/**
+ * @author Sharon Coffee
+ * @version 1.0
+ * Colour class takes three parameters containing float values for red, green and blue in the range from 0.0 to 1.0.
+ * Colour class takes one parameter containing RGB component values with red component bits 16-23,
+ *   green component bits 8-17 and blue component bits 0-7.
+ * @returns true if colour objects with similar component values are equal.
+ * @returns false if colour objects contain null values.
+ * @returns float values if colour objects contain similar float component values.
+ * @returns combined RGB component values converted from the float component values for red, green and blue.
+ * @returns combined Hex component values converted from combined RGB component containing red bits 16-23, green bits 8-17 and blue bits 0-7.
+ * @returns float component values from an array of float values for red, green and blue
+ * @returns the hash result after converting the red, green and blue float values into the bit component values.
+ * @returns String showing red, green and blue values used.
+ */
 public class Colour {
     public float red;
     public float green;
@@ -77,10 +93,9 @@ public class Colour {
 
     @Override
     public int hashCode() {
-        int result = (red != 0.0f ? Float.floatToIntBits(red) : 0);
-        result = result + (green != 0.0f ? Float.floatToIntBits(green) : 0);
-        result = result + (blue != 0.0f ? Float.floatToIntBits(blue) : 0);
-        return result;
+        return (red != 0.0f ? Float.floatToIntBits(red) : 0)
+                + (green != 0.0f ? Float.floatToIntBits(green) : 0)
+                + (blue != 0.0f ? Float.floatToIntBits(blue) : 0);
     }
 
     @Override

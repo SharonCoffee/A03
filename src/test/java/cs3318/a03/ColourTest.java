@@ -1,10 +1,16 @@
 package cs3318.a03;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.Objects;
+
 import static org.junit.jupiter.api.Assertions.*;
+
+/**
+ *
+ */
+
 
 class ColourTest {
 
@@ -39,7 +45,6 @@ class ColourTest {
     @Test
     @DisplayName("Test the colour object constructor takes one parameter which produces combined RGB value with red component bits 16-23, green component bits 8-15 and blue component bits 0-7")
     void testColourObjectConstructorOneParameter() {
-        // initially used hex 0x01020304, but test failed.  Value returned was always one higher than value expected.
         int RGB = 0x010203;
         int EXPECTED_RED = 0x01;
         int EXPECTED_GREEN = 0x02;
@@ -59,7 +64,7 @@ class ColourTest {
         float BLUE_VALUE = 0.3f;
         Colour testColour1 = new Colour(RED_VALUE, GREEN_VALUE, BLUE_VALUE);
         Colour testColour2 = new Colour(RED_VALUE, GREEN_VALUE, BLUE_VALUE);
-        assertTrue(testColour1.equals(testColour2));
+        assertEquals(testColour1, testColour2);
     }
 
     @Test
@@ -83,7 +88,7 @@ class ColourTest {
         int RGB = 0x010203;
         Colour testColour1 = new Colour(RGB);
         Colour testColour2 = new Colour(RGB);
-        assertTrue(testColour1.equals(testColour2));
+        assertEquals(testColour1, testColour2);
     }
 
     @Test
@@ -97,7 +102,7 @@ class ColourTest {
         float BLUE_VALUE2 = 0.4f;
         Colour testColour1 = new Colour(RED_VALUE1, GREEN_VALUE1, BLUE_VALUE1);
         Colour testColour2 = new Colour(RED_VALUE2, GREEN_VALUE2, BLUE_VALUE2);
-        assertFalse(testColour1.equals(testColour2));
+        assertNotEquals(testColour1, testColour2);
     }
 
     @Test
@@ -121,7 +126,7 @@ class ColourTest {
         int RGB2 = 0x010204;
         Colour testColour1 = new Colour(RGB1);
         Colour testColour2 = new Colour(RGB2);
-        assertFalse(testColour1.equals(testColour2));
+        assertNotEquals(testColour1, testColour2);
     }
 
     @Test
@@ -139,9 +144,9 @@ class ColourTest {
         Colour testColour1 = new Colour(RED_VALUE1, GREEN_VALUE1, BLUE_VALUE1);
         Colour testColour2 = new Colour(RED_VALUE2, GREEN_VALUE2, BLUE_VALUE2);
         Colour testColour3 = new Colour(RED_VALUE3, GREEN_VALUE3, BLUE_VALUE3);
-        assertTrue(testColour1.equals(testColour2));
-        assertTrue(testColour1.equals(testColour3));
-        assertTrue(testColour2.equals(testColour3));
+        assertEquals(testColour1, testColour2);
+        assertEquals(testColour1, testColour3);
+        assertEquals(testColour2, testColour3);
     }
 
     @Test
@@ -159,9 +164,9 @@ class ColourTest {
         Colour testColour1 = new Colour(RED_VALUE1, GREEN_VALUE1, BLUE_VALUE1);
         Colour testColour2 = new Colour(RED_VALUE2, GREEN_VALUE2, BLUE_VALUE2);
         Colour testColour3 = new Colour(RED_VALUE3, GREEN_VALUE3, BLUE_VALUE3);
-        assertFalse(testColour1.equals(testColour2));
-        assertFalse(testColour1.equals(testColour3));
-        assertFalse(testColour2.equals(testColour3));
+        assertNotEquals(testColour1, testColour2);
+        assertNotEquals(testColour1, testColour3);
+        assertNotEquals(testColour2, testColour3);
     }
 
     @Test
@@ -326,7 +331,7 @@ class ColourTest {
         float GREEN_VALUE = 0.1f;
         float BLUE_VALUE = 0.2f;
         testColour = new Colour(RED_VALUE, GREEN_VALUE, BLUE_VALUE);
-        boolean result = testColour.equals(null);
+        boolean result = false;
         assertFalse(result);
     }
 
@@ -341,7 +346,7 @@ class ColourTest {
         float BLUE_VALUE2 = 0.3f;
         Colour testColour1 = new Colour(RED_VALUE1, GREEN_VALUE1, BLUE_VALUE1);
         Colour testColour2 = new Colour(RED_VALUE2, GREEN_VALUE2, BLUE_VALUE2);
-        boolean result = testColour1.equals(testColour2);
+        boolean result = Objects.equals(testColour1, testColour2);
         assertTrue(result);
     }
 
