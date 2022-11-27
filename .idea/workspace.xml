@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ac32a8c1-7311-489a-ab66-d7fd02f66a8a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cs3318/a03/Colour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs3318/a03/Colour.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cs3318/a03/ColourTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cs3318/a03/ColourTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,20 +37,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "project.propGUI"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propGUI&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -75,7 +76,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ColourTest.testEqualsObjectWithDifferentValuesShouldReturnFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ColourTest.testFloatColourComponents (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="A03" />
       <extension name="coverage">
         <pattern>
@@ -85,13 +86,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="cs3318.a03" />
       <option name="MAIN_CLASS_NAME" value="cs3318.a03.ColourTest" />
-      <option name="METHOD_NAME" value="testEqualsObjectWithDifferentValuesShouldReturnFalse" />
+      <option name="METHOD_NAME" value="testFloatColourComponents" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ColourTest.testEqualsObjectWithSameValuesShouldReturnTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ColourTest.testFloatColourComponents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="A03" />
       <extension name="coverage">
         <pattern>
@@ -101,13 +102,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="cs3318.a03" />
       <option name="MAIN_CLASS_NAME" value="cs3318.a03.ColourTest" />
-      <option name="METHOD_NAME" value="testEqualsObjectWithSameValuesShouldReturnTrue" />
+      <option name="METHOD_NAME" value="testFloatColourComponents(float,float,float)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ColourTest.testHashCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ColourTest.testFloatColourComponentsWithinRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="A03" />
       <extension name="coverage">
         <pattern>
@@ -117,13 +118,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="cs3318.a03" />
       <option name="MAIN_CLASS_NAME" value="cs3318.a03.ColourTest" />
-      <option name="METHOD_NAME" value="testHashCode" />
+      <option name="METHOD_NAME" value="testFloatColourComponentsWithinRange" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ColourTest.testStringMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ColourTest.testFloatColourComponents.[1] 0.0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="A03" />
       <extension name="coverage">
         <pattern>
@@ -133,8 +134,11 @@
       </extension>
       <option name="PACKAGE_NAME" value="cs3318.a03" />
       <option name="MAIN_CLASS_NAME" value="cs3318.a03.ColourTest" />
-      <option name="METHOD_NAME" value="testStringMethod" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" value="testFloatColourComponents(float,float,float)" />
+      <option name="TEST_OBJECT" value="uniqueId" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-jupiter]/[class:cs3318.a03.ColourTest]/[test-template:testFloatColourComponents(float, float, float)]/[test-template-invocation:#1]" />
+      </uniqueIds>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -142,10 +146,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ColourTest" />
-        <item itemvalue="JUnit.ColourTest.testStringMethod" />
-        <item itemvalue="JUnit.ColourTest.testHashCode" />
-        <item itemvalue="JUnit.ColourTest.testEqualsObjectWithDifferentValuesShouldReturnFalse" />
-        <item itemvalue="JUnit.ColourTest.testEqualsObjectWithSameValuesShouldReturnTrue" />
+        <item itemvalue="JUnit.ColourTest.testFloatColourComponentsWithinRange" />
+        <item itemvalue="JUnit.ColourTest.testFloatColourComponents (1)" />
+        <item itemvalue="JUnit.ColourTest.testFloatColourComponents" />
+        <item itemvalue="JUnit.ColourTest.testFloatColourComponents.[1] 0.0" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +163,8 @@
       <updated>1669479321969</updated>
       <workItem from="1669479323109" duration="10184000" />
       <workItem from="1669498368403" duration="301000" />
-      <workItem from="1669548317279" duration="13122000" />
+      <workItem from="1669548317279" duration="13270000" />
+      <workItem from="1669578196585" duration="1475000" />
     </task>
     <task id="LOCAL-00001" summary="build:  create new maven build file">
       <created>1669479371760</created>
@@ -469,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669570982991</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="refactor:  move variable names before all tests instead of instantiating variables for every test.">
+      <created>1669576004090</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1669576004090</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +499,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: Add Test if colour object constructor taking three parameters is exceeding the maximum floating point value of 1.0, which fails." />
     <MESSAGE value="refactor:  modified the colour constructor in the Colour class to throw an exception if red, green and blue values are less than 0 or greater than 1.&#10;feat:  Test if colour object constructor taking three parameters is exceeding the maximum floating point value of 1.0 is now successful." />
     <MESSAGE value="feat:  Add Test if colour object constructor taking three parameters is less than the minimum floating point value of 0.0, which is successful." />
     <MESSAGE value="feat:  Add Test when creating a colour object with red, green and blue float values returns a combined RGB value that is correct, which fails.&#10;feat:  Add public int getCombinedFloatRGB method in Colour class for the above test." />
@@ -512,6 +523,7 @@
     <MESSAGE value="Javadoc: add javadoc for Colour.java class&#10;refactor: remove warning for redundant result in hashCode() method.&#10;style:  removed unnecessary comments.&#10;refactor: removed 13 warnings to convert assertTrue and assertFalse to assertEquals and assertNotEquals for all tests." />
     <MESSAGE value="style:  commit unversioned files" />
     <MESSAGE value="Javadoc: modified Javadoc comments in the Colour.java class&#10;Javadoc: modified Javadoc comments in the ColourTest.java class&#10;refactor:  refactor display names of tests to be more descriptive" />
-    <option name="LAST_COMMIT_MESSAGE" value="Javadoc: modified Javadoc comments in the Colour.java class&#10;Javadoc: modified Javadoc comments in the ColourTest.java class&#10;refactor:  refactor display names of tests to be more descriptive" />
+    <MESSAGE value="refactor:  move variable names before all tests instead of instantiating variables for every test." />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor:  move variable names before all tests instead of instantiating variables for every test." />
   </component>
 </project>

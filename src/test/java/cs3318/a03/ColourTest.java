@@ -2,6 +2,8 @@ package cs3318.a03;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import java.util.Objects;
 
@@ -309,6 +311,24 @@ class ColourTest {
         String expected =  "Colour{red = 0.9, green = 0.7, blue = 0.8}";
         String actual = testColour.toString();
         assertEquals(expected, actual);
+    }
+
+    @ParameterizedTest
+    @ValueSource(floats = {0.0f, 0.1f, 0.2f})
+    void testFloatColourComponents() {
+        testColour = new Colour(RED_FLOAT_VALUE3, GREEN_FLOAT_VALUE3, BLUE_FLOAT_VALUE3);
+        assertTrue(testColour.getRed() >= 0.0 && testColour.getRed() <= 1.0);
+        assertTrue(testColour.getGreen() >= 0.0 && testColour.getGreen() <= 1.0);
+        assertTrue(testColour.getBlue() >= 0.0 && testColour.getBlue() <= 1.0);
+    }
+
+    @ParameterizedTest
+    @ValueSource(floats = {0.0f, 1.0f})
+    void testFloatColourComponentsWithinRange() {
+        testColour = new Colour(RED_FLOAT_VALUE3, GREEN_FLOAT_VALUE3, BLUE_FLOAT_VALUE3);
+        assertTrue(RED_FLOAT_VALUE3 >= 0.0 && RED_FLOAT_VALUE3 <= 1.0);
+        assertTrue(GREEN_FLOAT_VALUE3 >= 0.0 && GREEN_FLOAT_VALUE3 <= 1.0);
+        assertTrue(BLUE_FLOAT_VALUE3 >= 0.0 && BLUE_FLOAT_VALUE3 <= 1.0);
     }
 
 
